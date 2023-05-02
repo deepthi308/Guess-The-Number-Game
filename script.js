@@ -52,10 +52,10 @@ const checkSimilarity = (correctNumber, userNumber) => {
             tip.innerText = ''
             userInput.value = ''
         }
-        high = checkHighScore(scores);
-        highScore.innerText = high;   
+        // high = checkHighScore(scores);
+        // highScore.innerText = high;   
     }
-    console.log(score.innerText)
+    // console.log(score.innerText)
 }
 
 const handleCheck = function (e) {
@@ -76,10 +76,11 @@ const handlePlayAgain = () => {
     correctNumber = Math.ceil(Math.random() * 20);
     crtNum.innerText = '?';
     userInput.value = '';
-    score.innerText = 0;
+    scoree = 20;
+    score.innerText = scoree;
     highScore.innerText = checkHighScore(scores);
     tip.innerText = '';
-    result.innerText = 'Result';
+    result.innerText = 'Start Guessing';
     userInput.focus();
     // console.log(correctNumber);
 }
