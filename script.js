@@ -11,7 +11,7 @@ const result = document.querySelector('.result');
 const body = document.getElementsByTagName('body');
 
 let correctNumber = Math.ceil(Math.random() * 20);
-const scores = [];
+const scores = [0];
     let scoree = 0;
     let high = 0;
 function checkHighScore(scores) {
@@ -70,7 +70,7 @@ const handlePlayAgain = () => {
     correctNumber = Math.ceil(Math.random() * 20);
     crtNum.innerText = '?';
     userInput.value = '';
-    score.innerText = '';
+    score.innerText = 0;
     highScore.innerText = checkHighScore(scores);
     tip.innerText = '';
     result.innerText = 'Result';
